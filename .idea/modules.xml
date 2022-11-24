@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/daolian_servlet/daolian_servlet.iml" filepath="$PROJECT_DIR$/daolian_servlet/daolian_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_case/day17_case.iml" filepath="$PROJECT_DIR$/day17_case/day17_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day1_tomcat/day1_tomcat.iml" filepath="$PROJECT_DIR$/day1_tomcat/day1_tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day2_servlet/day2_servlet.iml" filepath="$PROJECT_DIR$/day2_servlet/day2_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy_case/proxy_case.iml" filepath="$PROJECT_DIR$/proxy_case/proxy_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webapplication.iml" filepath="$PROJECT_DIR$/webapplication.iml" />
+    </modules>
+  </component>
+</project>

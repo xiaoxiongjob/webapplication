@@ -1,0 +1,29 @@
+1.下载apache的commons.BeanUtils包还不够还得下载commons.Logging包结果还不够
+  还得下载commons.Collections包
+  结果运行报错Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections.FastHashMap
+  百度了一下还得有commons.Collections 3.2.2包
+        出问题的代码:
+             BeanUtils.populate(user,map);
+2.如果我们想查询结果为空时，返回null而不是抛出异常，该怎么办呢？
+  很简单，只需要在捕获EmptyResultDataAccessException，然后返回null，代码如下：
+  User object = null;
+              try{
+                  String sql = "select * from user where username = ? and password = ?";
+                  object = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
+              } catch (EmptyResultDataAccessException e) {
+                  return null;
+              }
+              return object;
+3.add.jsp中:   <div class = "form-group">
+                  <label>性别:</label>
+                  <input type = "radio" name = "gender" value = "男" checked = "checked"/>男
+                  <input type = "radio" name = "gender" value = "女"/>女
+              </div>
+              name应该与user的性别属性一致,user.getGender -> gerGender -> gender
+4. <a class = "btn btn-default btn-sm" href = "${pageContext.request.contextPath}/delUserServlet?id=${user.id}">删除</a></td>
+               ${pageContext.request.contextPath}/后面不能有空格,否则找不到指定的  servlet
+5.不够熟练      <div class = "form-group">
+                  <label>性别:</label>
+                  <input type = "radio"  name = "gender" value = "男" checked = "checked"/>男
+                  <input type = "radio"  name = "gender" value = "女"/>女
+              </div>

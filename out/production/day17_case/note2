@@ -1,0 +1,16 @@
+1.点击事件和超链接
+2.用户绑定的id和数据库主键id不一致
+3.多个servlet下,有没有必要多次设置request的参数
+4.input的内容要想提交,都得有自己的name
+5.复选框选中的内容可以做成一个表单,提交处理
+6.设置点击事件和方法
+         <a class = "btn btn-primary" href = "javascript:void(0);" id = "delSelected">删除选中</a>
+         <a class = "btn btn-default btn-sm" href = "javascript:deleteUser(${user.id});">删除</a></td>
+7. 搞清楚是byName还是byId
+         document.getElementById("firstCb").onclick
+         let cbs = document.getElementsByName("uid")
+8.在UserDaoImpl中凡是涉及到查询数据库的,都要处理空数据或者空指针异常4
+9.在findTotalCount中自动拆箱导致的空指针异常
+10.int currentPage = Integer.parseInt("_currentPage");括号里面没有引号
+11.分页条件查询时,没有回显信息的话,会导致查询的混乱
+12.假设共有三页,当在第一页点击<<时会报错,在第三页
